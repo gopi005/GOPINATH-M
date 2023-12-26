@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="assets/img/nike.jpg" rel="icon">
+    <link href="assets/img/nike.jpg" rel="apple-touch-icon">
+    <link rel="stylesheet" href="assets/css/email.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("WipovpcnGd_iPXGxN");
+})();
+</script>
+
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-col">
+          <img class="logo" src="assets/img/nike.jpg"/>
+        </div>
+        <div class="right-col">
+          <div class="theme-switch-wrapper">
+            <button ><a href="index.html" style="color: aliceblue;">Home</a> </button>
+          <!-- <label class="theme-switch" for="checkbox">
+              <input type="button" id="checkbox" />
+              <div class="slider round"></div>
+        </label> -->
+        <div class="description"></div>
+    </div>
+        <h1>Contact us</h1>
+        <p>If you require any further information, feel free to contact me.<br>“Success is falling nine times and getting up ten.” </p>
+        
+        <form id="contact-form">
+            <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="message">Message</label>
+        <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+        <button type="submit" id="submit" name="submit" onclick="sendMail()">Send</button>
+        
+    </form>
+    <!-- <div>
+        <input type="text" id="name" placeholder="name">
+        <input type="email" id="email" placeholder="email id">
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit" id="submit" onclick="sendMail()">send</button>
+    </div> -->
+
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/email.js"></script>
+</body>
+</html>
